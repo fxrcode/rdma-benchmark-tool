@@ -82,6 +82,7 @@ int main(int argc, char** argv)
 	    // if (dif1gbps > 1.0)	
 	    cout <<  date::format("%F %T", time_point_cast<microseconds>(system_clock::now())) << ", diff1GBps = " << dif1gbps << ", Spent " << fp_ms.count() << " ms." << endl;
 
+		cout <<  date::format("%F %T", time_point_cast<microseconds>(system_clock::now())) << ", sumGBps = " << dif0gbps + dif1gbps << endl;
 
 	    file0.close();
 	    file1.close();
